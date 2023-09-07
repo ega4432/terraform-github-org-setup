@@ -41,3 +41,5 @@ members = [  # YOUR_ORGANIZATION_MEMBERS
   }
 ]
 ```
+
+See [example](https://github.com/ega4432/terraform-github-org-setup/tree/main/examples/organization) for more information.
