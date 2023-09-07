@@ -32,12 +32,10 @@ members = [  # YOUR_ORGANIZATION_MEMBERS
   {
     user        = "xxx"
     fullname    = "xxx xxx"
-    create_repo = true
   }
   {
     user        = "yyy"
     fullname    = "yyy yyy"
-    create_repo = true
   }
 ]
 ```
