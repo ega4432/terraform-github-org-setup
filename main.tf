@@ -44,7 +44,7 @@ resource "github_membership" "this" {
 }
 
 resource "github_repository" "this" {
-  for_each = { for k, v in var.members : k => v if try(v.create_repo, false) }
+  for_each = { for k, v in var.members : k => v if try(v.create_repo, true) }
 
   name = replace(lower(each.value.fullname), " ", "-")
 
@@ -95,7 +95,7 @@ resource "github_repository" "this" {
 }
 
 resource "github_repository_collaborator" "this" {
-  for_each = { for k, v in var.members : k => v if try(v.create_repo, false) }
+  for_each = { for k, v in var.members : k => v if try(v.create_repo, true) }
 
   repository = replace(lower(each.value.fullname), " ", "-")
   username   = each.value.user

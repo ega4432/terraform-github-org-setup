@@ -1,5 +1,5 @@
 module "organization" {
-  source = "../.."
+  source = "git@github.com:ega4432/terraform-github-org-setup.git"
 
   org_settings = {
     billing_email                 = var.billing_email
