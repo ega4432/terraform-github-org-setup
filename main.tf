@@ -37,7 +37,7 @@ resource "github_organization_settings" "this" {
 }
 
 resource "github_membership" "this" {
-  for_each = merge(local.admins, local.members)
+  for_each = local.all_members
 
   username = each.key
   role     = each.value
