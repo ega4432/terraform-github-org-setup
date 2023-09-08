@@ -41,3 +41,13 @@ members = [  # YOUR_ORGANIZATION_MEMBERS
 ```
 
 See [example](https://github.com/ega4432/terraform-github-org-setup/tree/main/examples/organization) for more information.
+
+## Test
+
+The Go library called [Terratest](https://github.com/gruntwork-io/terratest) is used for testing.
+
+```sh
+$ cd test/
+
+$ go test -timeout 1m
+```
