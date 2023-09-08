@@ -1,0 +1,13 @@
+github_pat = "ghp_xxxxxxxxxxxxxxxxx"
+
+billing_email                 = "xxxxxxxx@gmail.com"
+default_repository_permission = "none"
+org_name                      = "xxxxxx"
+
+admins = []
+members = [
+  {
+    user        = "xxxx"
+    fullname    = "xxxx xxxx"
+  }
+]
