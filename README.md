@@ -1,5 +1,7 @@
 # terraform-github-org-setup
 
+[![CI](https://github.com/ega4432/terraform-github-org-setup/actions/workflows/ci.yaml/badge.svg)](https://github.com/ega4432/terraform-github-org-setup/actions/workflows/ci.yaml)
+
 ## Usage
 
 `main.tf`
