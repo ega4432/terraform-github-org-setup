@@ -1,5 +1,6 @@
 variable "github_pat" {
-  type = string
+  type      = string
+  sensitive = true
 }
 
 variable "org_name" {
