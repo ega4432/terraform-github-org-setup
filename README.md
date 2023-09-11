@@ -18,7 +18,7 @@ module "organization" {
 }
 ```
 
-`variable.tf` or `*.tfvars`
+`*.tfvars`
 
 ```tf
 github_pat = "YOUR_GITHUB_PERSONAL_ACCESS_TOKEN"
@@ -38,6 +38,16 @@ members = [  # YOUR_ORGANIZATION_MEMBERS
     fullname    = "yyy yyy"
   }
 ]
+```
+
+Once you have prepared the necessary files as described above, execute the following command.
+
+```sh
+$ terraform init
+
+$ terraform plan -var-file <YOUR_VARS_FILE_NAME>.tfvars -out=tfplan
+
+$ terraform apply tfplan
 ```
 
 See [example](https://github.com/ega4432/terraform-github-org-setup/tree/main/examples/organization) for more information.
