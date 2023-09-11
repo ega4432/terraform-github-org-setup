@@ -90,7 +90,7 @@ resource "github_repository" "this" {
 
   lifecycle {
     prevent_destroy = true
-    ignore_changes = [ description ]
+    ignore_changes  = [description]
   }
 }
 
